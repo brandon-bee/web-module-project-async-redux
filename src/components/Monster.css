@@ -1,0 +1,11 @@
+.closedMonster {
+  border: 2px solid blue;
+  border-radius: 25%;
+  margin: 10px auto;
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.closedName {
+}

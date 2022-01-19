@@ -20,12 +20,11 @@ const MonsterList = (props) => {
 
   return(
     <div>
-      <h1>MonsterList Component Title</h1>
+      <h1>List of Monsters</h1>
       {
         monsters.map(monster => {
-          console.log(monster);
           return(
-            <Monster key={monster.id} />
+            <Monster key={monster.id} props={monster} />
           )
         })
       }

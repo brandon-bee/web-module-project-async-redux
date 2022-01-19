@@ -72,7 +72,8 @@ const initialState = {
     }
   ],
   isFetching: false,
-  error: ''
+  error: '',
+  isExpanded: false
 };
 
 export const reducer = (state = initialState, action) => {
@@ -82,21 +83,24 @@ export const reducer = (state = initialState, action) => {
         ...state,
         monsters: [],
         isFetching: true,
-        error: ''
+        error: '',
+        isExpanded: false
       });
     case FETCH_FAIL:
       return({
         ...state,
-        monsters: {},
+        monsters: [],
         isFetching: false,
-        error: action.payload
+        error: action.payload,
+        isExpanded: false
       });
     case FETCH_SUCCESS:
       return({
         ...state,
         monsters: action.payload,
         isFetching: false,
-        error: ''
+        error: '',
+        isExpanded: false
       });
     default:
       return state;
