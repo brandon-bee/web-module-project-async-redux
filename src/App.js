@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import MonsterList from './components/MonstersList';
 
 function App() {
   return (
@@ -12,13 +13,8 @@ function App() {
         />
         <button>Search</button>
       </form>
-
-      <div>Monsters Component
-        <div>Individual Monster Component</div>
-        <div>Individual Monster Component</div>
-        <div>Individual Monster Component</div>
-        <div>Individual Monster Component</div>
-      </div>
+      
+      <MonsterList />
     </div>
   );
 }
